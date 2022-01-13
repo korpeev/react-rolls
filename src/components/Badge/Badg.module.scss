@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+.BadgeIcon {
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  .Badge {
+    position: absolute;
+    right: -5px;
+    top: -10px;
+    background-color: $accent-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $light-color;
+    width: 17px;
+    height: 18px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  &:hover {
+    transform: scale(1.03);
+  }
+}

@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+.main {
+  padding: 5rem 0;
+  @media screen and (max-width: 1200px) {
+    padding: 1rem;
+  }
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper {
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  height: minmax(auto, 100vh);
+  padding: 2rem 1rem;
+}

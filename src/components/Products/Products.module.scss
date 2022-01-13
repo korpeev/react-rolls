@@ -1,0 +1,198 @@
+@import "../../styles/variables.scss";
+.products {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1 1;
+  @media screen and (max-width: 568px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.product {
+  padding: 1rem 0.5rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease-in-out;
+  width: 250px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  &:hover {
+    cursor: pointer;
+    box-shadow: $box-shadow;
+  }
+  img {
+    object-fit: contain;
+    width: 200px;
+    height: 150px;
+  }
+  .productText {
+    text-align: center;
+  }
+  span {
+    font-weight: 500;
+    opacity: 0.7;
+    padding-bottom: 0.5rem;
+  }
+  p {
+    text-align: center;
+    max-width: 200px;
+    font-weight: 500;
+    opacity: 0.7;
+    height: 100px;
+  }
+  .productsAction {
+    padding-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    span {
+      padding: 0.5rem 0;
+      opacity: 0.7;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+.productButton {
+  display: flex;
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: $green-color;
+    color: $light-color;
+    border-radius: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+      background-color: darken($green-color, 5);
+    }
+  }
+}
+
+.proudctWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.productCart {
+  img {
+    height: 100px;
+  }
+  .desc {
+    display: flex;
+  }
+  .productsAction {
+    margin-top: 1rem;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0.5rem 0;
+  max-height: 150px;
+  width: 100%;
+  &:hover {
+    box-shadow: none;
+  }
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    // width: 75%;
+    img {
+      height: 75px;
+    }
+    flex-wrap: wrap;
+    .productText {
+      margin: 0.8rem 0;
+      height: 40px;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      @media screen and (max-width: 480px) {
+        margin: 0.2rem 0;
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.cartButton {
+  display: flex;
+  button {
+    margin: 0 1rem;
+    border-radius: 50%;
+    padding: 0.3rem 0.7rem;
+    background-color: transparent;
+    border: 2px solid $accent-color;
+    color: $accent-color;
+    transition: all 0.3s ease-in-out;
+    font-size: 19px;
+    &:hover {
+      background-color: $accent-color;
+      color: $light-color;
+    }
+  }
+}
+
+.delete {
+  margin: 0 1rem;
+  font-size: 18px;
+  border-radius: 50%;
+  padding: 0.4rem 0.8rem;
+  background-color: transparent;
+  border: 2px solid $accent-color;
+  color: $accent-color;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $accent-color;
+    color: $light-color;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  .infoText {
+    text-align: center;
+    .infoTitle {
+      padding-bottom: 1rem;
+    }
+    .infoDescriptions {
+      white-space: pre-wrap;
+    }
+  }
+  button {
+    flex: 0 1 0;
+    width: 200px;
+    padding: 1rem;
+    border: none;
+    color: $light-color;
+    background-color: $green-color;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: background-color 0.3s linear;
+    &:hover {
+      background-color: lighten($green-color, 5);
+      cursor: pointer;
+    }
+  }
+}

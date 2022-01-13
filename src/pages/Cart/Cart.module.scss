@@ -1,0 +1,66 @@
+@import "../../styles/variables.scss";
+.cart {
+  padding: 5rem 0;
+  @media screen and (max-width: 1200px) {
+    padding: 1rem;
+  }
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper {
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  height: minmax(auto, 100vh);
+  padding: 2rem 1rem;
+}
+
+.cartOrder {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cartOrderButtons {
+  display: flex;
+  align-items: center;
+
+  button {
+    padding: 0.8rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 700;
+  }
+
+  .back {
+    background-color: $green-color;
+    color: $light-color;
+    transition: background-color 0.3s ease;
+    margin-right: 0.5rem;
+    &:hover {
+      background-color: lighten($green-color, 5);
+    }
+  }
+  .order {
+    background-color: $accent-color;
+    color: $light-color;
+    transition: background-color 0.3s ease;
+    margin-right: 0.5rem;
+    &:hover {
+      background-color: lighten($accent-color, 5);
+    }
+  }
+}
+
+.cartTotalPrice {
+  padding: 1rem 0;
+  span {
+    font-weight: 700;
+    font-size: 25px;
+  }
+}
