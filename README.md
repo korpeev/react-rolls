@@ -9,4 +9,4 @@
 3. Firebase/Firestore
 4. React/React-Router-Dom
 
-[Ссылка на сайт](https://ecstatic-meninsky-c65a3c.netlify.app/)
+[Ссылка на сайт](https://react-rolls.netlify.app/)
