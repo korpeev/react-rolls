@@ -1,4 +1,4 @@
-import { makeAutoObservable, runInAction } from "mobx";
+import { makeAutoObservable } from "mobx";
 import { Cart } from "./../types/Product";
 import RootStore from "./RootStore";
 
